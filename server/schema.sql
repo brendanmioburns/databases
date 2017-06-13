@@ -20,7 +20,7 @@ CREATE TABLE room_message (
   foreign key (message_id) references messages (id)
 );
 
-CREATE TABLE name_room (
+CREATE TABLE name_message (
   name_id int not Null primary key,
   name varchar(30),
   message_id int not Null,
