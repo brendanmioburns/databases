@@ -40,7 +40,7 @@ var app = {
 
     // POST the message to the server
     $.ajax({
-      url: app.server,
+      url: app.server + '/classes/messages',
       type: 'POST',
       data: message,
       success: function (data) {
@@ -58,7 +58,7 @@ var app = {
 
   fetch: function(animate) {
     $.ajax({
-      url: app.server,
+      url: app.server + '/classes/messages',
       type: 'GET',
       data: { order: '-createdAt' },
       contentType: 'application/json',
